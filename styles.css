@@ -39,6 +39,13 @@ body {
     right: 10px;
 }
 
+.container p {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 100px;
+}
+
 .container i span {
     color: rgb(247, 187, 76);
     font-weight: 600;
