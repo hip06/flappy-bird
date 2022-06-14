@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --w-screen: 600px;
+    --h-screen: 800px;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(to top, #8D43A7, #3E889D);
+
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px rgb(48, 47, 47);
+    border-radius: 20px;
+}
+
+.container i {
+    position: absolute;
+    display: block;
+    top: -20px;
+    right: 10px;
+}
+
+.container i span {
+    color: rgb(247, 187, 76);
+    font-weight: 600;
+}
+
+#game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 20px;
+    background: url('https://wallpaperaccess.com/full/7626039.jpg') center center / cover no-repeat;
+
+}
+
+#text {
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.btn-play {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 31%;
+    font-size: 30px;
+    padding: 8px 16px;
+    border: none;
+    background-color: rgb(243, 180, 108);
+    cursor: pointer;
+}
+
+.btn-play:focus-visible {
+    border: none;
+}
