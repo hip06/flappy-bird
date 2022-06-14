@@ -143,7 +143,7 @@ const run = () => {
 
             tubes.forEach((item) => {
                 // collision
-                if (birdPlay.getCurrentX() + 40 > item.getCurrentX() && birdPlay.getCurrentX() < item.getCurrentX() + settings.WIDTH_TUBE) {
+                if (birdPlay.getCurrentX() + 40 > item.getCurrentX() && birdPlay.getCurrentX() < item.getCurrentX() + settings.WIDTH_TUBE / 2) {
                     checkScore = true
                     if (birdPlay.getCurrentY() < item.getCurrentHeight() || birdPlay.getCurrentY() + 40 > item.getCurrentHeight() + settings.DISTANCE_TWO_TUBE) {
                         isEndGame = true
